@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".DisplayDriver">
+
+    <TextView
+        android:id="@+id/txtNotifaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appNotifaction"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="32dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/txtDriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/theDriver"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:layout_below="@id/txtNotifaction"
+        android:layout_marginTop="20dp"
+
+        />
+    <ImageView
+        android:id="@+id/driverPicture"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/txtDriverName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/dannydevito"
+
+        />
+    <TextView
+        android:id="@+id/txtEstimatedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/driverPicture"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+
+        />
+
+
+
+</RelativeLayout>

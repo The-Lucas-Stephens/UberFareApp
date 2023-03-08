@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">UberFareApp</string>
+    <string name="requestButton">Request Ride now</string>
+    <string name="goBackButton">Go Back</string>
+    <string name="estimateCostButton">Estimate Cost</string>
+
+
+    <string name="txtMainTitle">Uber Fare App</string>
+    <string name="txtUserMiles">Enter Trip Distance</string>
+    <string name="txtRideOptions">Select Ride Options:</string>
+    <string name="txtCarResult">Car Result</string>
+    <string name="txtMilesResult">Miles Result</string>
+    <string name="txtFinalCost">Final Cost$$</string>
+
+
+    <string name="appNotifaction">Your Driver Will Arrive Soon!</string>
+    <string name="theDriver">Driver:Danny Devito</string>
+
+    <string-array name="rideOptions">
+        <item>SmartCar</item>
+        <item>TraditionalSedan</item>
+        <item>MiniVan</item>
+    </string-array>
+</resources>

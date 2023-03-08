@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtUserMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtUserMiles"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRideOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="VisualintTextField" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="373dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUserMiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uber" />
+
+    <Spinner
+        android:id="@+id/theRideOptions"
+        android:layout_width="288dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="6dp"
+        android:entries="@array/rideOptions"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnEstimateCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRideOptions" />
+
+    <TextView
+        android:id="@+id/txtRideOptions"
+        android:layout_width="265dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/txtRideOptions"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/theRideOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserMiles" />
+
+    <Button
+        android:id="@+id/btnEstimateCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/estimateCostButton"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/theRideOptions" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="178dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEstimateCost"
+        app:srcCompat="@drawable/weride" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
